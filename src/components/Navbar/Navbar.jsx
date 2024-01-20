@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/logo.png'
+import Logo from '../../assets/js.png'
 import { IoSearch } from "react-icons/io5";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className='container flex justify-between items-center '>
               <div>
                    <a href="#" className='font-bold text-2xl sm:text-3xl flex gap-2'>
-                       <img src={Logo} alt="logo" className='w-10' />
+                       <img src={Logo} alt="logo" className='w-10 rounded-full' />
                        Jota Shop
                    </a>
               </div>

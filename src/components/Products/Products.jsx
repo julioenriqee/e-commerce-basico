@@ -83,9 +83,9 @@ const Products = () => {
       <div className='container'>
         {/* header section */}
         <div className='text-center mb-10 mas-x-[600px] mx-auto'>
-            <p className='text-sm text-primary '>Productos más vendidos</p>
-            <h1 className='text-3xl font-bold'>Productos</h1>
-            <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit repellendus natus
+            <p data-aos="fade-up" className='text-sm text-primary '>Productos más vendidos</p>
+            <h1 data-aos="fade-up" className='text-3xl font-bold'>Productos</h1>
+            <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reprehenderit repellendus natus
             </p>
         </div>
         {/* body section */}
@@ -94,6 +94,8 @@ const Products = () => {
                 {/* card section */}
                 {ProductsData.map((data) => (
                         <div
+                        data-aos='fade-up'
+                        data-aos-delay={data.aosDelay}
                         key={data.id}
                         className='space-y-3'
                         >
