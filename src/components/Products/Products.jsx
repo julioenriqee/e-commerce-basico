@@ -5,8 +5,8 @@ import Image2 from '../../assets/images/2.webp'
 import Image3 from '../../assets/images/3.webp'
 import Image4 from '../../assets/images/4.webp'
 import Image5 from '../../assets/images/5.webp'
-import Image6 from '../../assets/images/6.webp'
-import Image7 from '../../assets/images/7.webp'
+import Image6 from '../../assets/images/6.png'
+import Image7 from '../../assets/images/7.png'
 
 import { FaStar } from 'react-icons/fa6'
 
