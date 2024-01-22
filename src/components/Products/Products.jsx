@@ -113,6 +113,12 @@ const Products = () => {
                         </div>
                     ))}
             </div>
+            {/* view all button */}
+            <div data-aos="fade-up" className='flex justify-center'>
+                <button className='text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md'>
+                   Más productos 
+                </button>
+            </div>
         </div>
       </div>
     </div>
