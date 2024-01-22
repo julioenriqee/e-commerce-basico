@@ -51,7 +51,7 @@ const DropdownMenu = [
     },
 ];
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
         {/* upper Navbar */}
@@ -73,7 +73,7 @@ const Navbar = () => {
                    </div>
                 {/* order button */}
                 <button
-                onClick={() => alert("Ordering is not available yet")}
+                onClick={() => handleOrderPopup()}
                 className='bg-secondary/80 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-secondary hover:bg-opacity-100'
                 >
                 <span
@@ -93,7 +93,7 @@ const Navbar = () => {
           </div>
       </div>
         {/* lower Navbar */}
-      <div className='flex justify-center'>
+      <div data-aos="zoom-in" className='flex justify-center'>
         <ul className='sm:flex hidden items-center gap-4'>
             {
                 Menu.map((data)=>(

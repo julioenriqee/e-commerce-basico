@@ -25,7 +25,7 @@ const ImageList = [
     },
 ]
 
-const Hero = () => {
+const Hero = ({ handleOrderPopup }) => {
     var settings = {
         dots: false,
         infinite: true,
@@ -89,7 +89,7 @@ const Hero = () => {
                         data-aos-delay="300"
                         
                         >
-                            <button className='bg-primary/80 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-primary/50 hover:bg-opacity-100'>
+                            <button onClick={handleOrderPopup} className='bg-primary/80 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group hover:bg-primary/50 hover:bg-opacity-100'>
                                 Compra ahora
                             </button>
                         </div>

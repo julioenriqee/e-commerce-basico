@@ -57,7 +57,7 @@ const ProductsData = [
     },
 ]
 
-const TopProducts = () => {
+const TopProducts = ({ handleOrderPopup }) => {
   return (
     <div>
       <div className='container'>
@@ -92,7 +92,7 @@ const TopProducts = () => {
                             <h1 className='text-xl font-bold'>{data.title}</h1>
                             <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'>{data.description}</p>
                             <button 
-                            className='bg-primary hover:scale-105 duration-300 text-white px-4 py-1 rounded-full mt-4 group-hover:bg-white group-hover:text-primary' //onClick={handleOrderPopup} 
+                            className='bg-primary hover:scale-105 duration-300 text-white px-4 py-1 rounded-full mt-4 group-hover:bg-white group-hover:text-primary' onClick={handleOrderPopup} 
                             >
                             Comprar
                             </button>
