@@ -8,7 +8,7 @@ const BannerImg = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     height: '30vh',
-    width: '100vw',
+    width: '100%',
 }
 
 const Subscribe = () => {

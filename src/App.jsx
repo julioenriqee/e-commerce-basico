@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
+import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -20,15 +22,19 @@ const App = () => {
     AOS.refresh();
   }, []);
 
-  return  <div>
-    <Navbar /> 
-    <Hero />
-    <Products />
-    <TopProducts />
-    <Banner />
-    <Subscribe />
-    <Products />
-  </div>;
+  return  (
+    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
+      <Navbar /> 
+      <Hero />
+      <Products />
+      <TopProducts />
+      <Banner />
+      <Subscribe />
+      <Products />
+      <Testimonials />
+      <Footer />
+    </div>
+  );
 };
 
 export default App
